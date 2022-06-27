@@ -3,7 +3,7 @@ import { NavigationContainer} from '@react-navigation/native';
 import { createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import Home from '../screens/Home';
-import Settings from '../screens/Settings';
+import WriteMode from '../screens/WriteMode';
 
 const Stack = createNativeStackNavigator();
 
@@ -11,8 +11,8 @@ const Navigation = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Home'>
-        <Stack.Screen name="Welcome!" component={Home}/>
-        <Stack.Screen name="write your story" component={Settings}/>
+        <Stack.Screen name="Home" component={Home}/>
+        <Stack.Screen name="Diary" component={WriteMode}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
